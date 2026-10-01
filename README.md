@@ -1,16 +1,60 @@
-# React + Vite
+# CodeAlpha Frontend Development Internship
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my CodeAlpha Frontend Development Internship repository!
 
-Currently, two official plugins are available:
+This repository contains my frontend development projects, built to improve my skills in React, JavaScript, HTML, and CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Projects
 
-## React Compiler
+### Task 1: Calculator
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A functional calculator application built with React and Vite.
 
-## Expanding the ESLint configuration
+**Technologies:** React, Vite, JavaScript, CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Features:**
+
+* Interactive calculator interface
+* Responsive design
+* Mathematical operations
+
+### Task 2: Image Gallery
+
+A responsive image gallery built with React and Create React App.
+
+**Technologies:** React, Create React App, JavaScript, CSS
+
+**Features:**
+
+* Responsive image grid
+* Category filtering
+* Interactive lightbox
+* Previous and next image navigation
+* Mobile-friendly layout
+
+**Project folder:** `Task-1-Image-Gallery`
+
+## How to Run the Projects
+
+### Calculator (Vite)
+
+```bash
+npm install
+npm run dev
+```
+
+### Image Gallery (Create React App)
+
+```bash
+cd Task-1-Image-Gallery
+npm install
+npm start
+```
+
+## Author
+
+Hopeyemi
+
+## Internship
+
+CodeAlpha Frontend Development Internship

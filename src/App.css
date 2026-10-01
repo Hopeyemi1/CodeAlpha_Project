@@ -17,10 +17,6 @@ body {
 }
 
 
-/* =========================
-   MAIN CONTAINER
-   ========================= */
-
 .container {
   width: 100%;
   min-height: 100vh;
@@ -39,10 +35,6 @@ body {
 }
 
 
-/* =========================
-   CALCULATOR
-   ========================= */
-
 .caculator {
   width: 400px;
   max-width: 100%;
@@ -57,18 +49,9 @@ body {
 }
 
 
-/* =========================
-   FORM
-   ========================= */
-
 .caculator form {
   width: 100%;
 }
-
-
-/* =========================
-   DISPLAY
-   ========================= */
 
 form .display {
   width: 100%;
@@ -101,10 +84,6 @@ form .display input {
 }
 
 
-/* =========================
-   BUTTON ROWS
-   ========================= */
-
 form > div:not(.display) {
   width: 100%;
 
@@ -115,10 +94,6 @@ form > div:not(.display) {
   margin-bottom: 8px;
 }
 
-
-/* =========================
-   BUTTONS
-   ========================= */
 
 form input[type="button"] {
   flex: 1;
@@ -147,36 +122,19 @@ form input[type="button"] {
 }
 
 
-/* =========================
-   HOVER
-   ========================= */
-
 form input[type="button"]:hover {
   background-color: rgb(133, 57, 204);
 }
 
 
-/* =========================
-   BUTTON CLICK
-   ========================= */
-
 form input[type="button"]:active {
   transform: scale(0.95);
 }
-
-
-/* =========================
-   EQUAL BUTTON
-   ========================= */
 
 form input.equals {
   flex: 2;
 }
 
-
-/* =========================
-   TABLET
-   ========================= */
 
 @media (max-width: 600px) {
 
@@ -204,10 +162,6 @@ form input.equals {
   }
 }
 
-
-/* =========================
-   MOBILE
-   ========================= */
 
 @media (max-width: 480px) {
 
@@ -251,11 +205,6 @@ form input.equals {
   }
 }
 
-
-/* =========================
-   SMALL MOBILE
-   ========================= */
-
 @media (max-width: 360px) {
 
   .container {
@@ -288,10 +237,6 @@ form input.equals {
   }
 }
 
-
-/* =========================
-   VERY SMALL PHONES
-   ========================= */
 
 @media (max-width: 320px) {
 
