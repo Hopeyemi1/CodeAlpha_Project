@@ -16,250 +16,131 @@ body {
   overflow-x: hidden;
 }
 
-
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 20px;
+  min-height: 100dvh;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: linear-gradient(
     140deg,
     rgb(37, 37, 206),
     rgb(7, 7, 219)
   );
-
-  box-sizing: border-box;
 }
-
 
 .caculator {
-  width: 400px;
-  max-width: 100%;
-  padding: 25px 20px;
-
+  width: 100%;
+  max-width: 400px;
+  min-width: 0;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
-
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
-  box-sizing: border-box;
 }
-
 
 .caculator form {
   width: 100%;
+  min-width: 0;
 }
 
 form .display {
   width: 100%;
-  margin-bottom: 20px;
-
+  min-width: 0;
+  margin-bottom: 15px;
   display: flex;
 }
 
 form .display input {
   width: 100%;
+  min-width: 0;
   height: 80px;
-
   border: none;
   outline: none;
-
   border-radius: 8px;
-
   background-color: rgb(80, 80, 80);
-
   color: white;
-
   text-align: right;
-
-  padding: 5px 15px;
-
-  font-size: 40px;
+  padding: 5px 12px;
+  font-size: clamp(20px, 7vw, 40px);
   font-weight: bold;
-
-  box-sizing: border-box;
 }
-
 
 form > div:not(.display) {
   width: 100%;
-
+  min-width: 0;
   display: flex;
-
-  justify-content: space-between;
-
+  gap: 5px;
   margin-bottom: 8px;
 }
 
-
 form input[type="button"] {
-  flex: 1;
-
+  flex: 1 1 0;
   min-width: 0;
-
   height: 60px;
-
-  margin: 0 3px;
-
+  margin: 0;
   border: none;
   outline: none;
-
   border-radius: 10px;
-
   background-color: rgb(91, 91, 151);
-
   color: whitesmoke;
-
-  font-size: 18px;
+  font-size: clamp(13px, 4vw, 18px);
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.2s ease;
 }
-
 
 form input[type="button"]:hover {
   background-color: rgb(133, 57, 204);
 }
-
 
 form input[type="button"]:active {
   transform: scale(0.95);
 }
 
 form input.equals {
-  flex: 2;
+  flex: 2 1 0;
 }
-
-
-@media (max-width: 600px) {
-
-  .container {
-    padding: 15px;
-  }
-
-  .caculator {
-    width: 100%;
-    max-width: 380px;
-
-    padding: 20px 15px;
-  }
-
-  form .display input {
-    height: 70px;
-    font-size: 34px;
-  }
-
-  form input[type="button"] {
-    height: 58px;
-    font-size: 17px;
-
-    margin: 0 2px;
-  }
-}
-
 
 @media (max-width: 480px) {
-
   .container {
     padding: 10px;
   }
 
   .caculator {
-    width: 100%;
     max-width: 360px;
-
-    padding: 15px 10px;
-
+    padding: 15px 12px;
     border-radius: 12px;
-  }
-
-  form .display {
-    margin-bottom: 12px;
   }
 
   form .display input {
     height: 65px;
-
-    font-size: 30px;
-
-    padding: 5px 10px;
-  }
-
-  form > div:not(.display) {
-    margin-bottom: 6px;
   }
 
   form input[type="button"] {
     height: 55px;
-
-    margin: 0 2px;
-
     border-radius: 8px;
-
-    font-size: 16px;
   }
 }
 
 @media (max-width: 360px) {
-
   .container {
-    padding: 8px;
+    padding: 6px;
   }
 
   .caculator {
-    width: 100%;
-    max-width: 340px;
-
     padding: 12px 8px;
   }
 
   form .display input {
-    height: 58px;
-
-    font-size: 26px;
-
-    padding: 5px 8px;
+    height: 55px;
   }
 
   form input[type="button"] {
-    height: 50px;
-
-    margin: 0 1.5px;
-
-    border-radius: 7px;
-
-    font-size: 14px;
-  }
-}
-
-
-@media (max-width: 320px) {
-
-  .container {
-    padding: 5px;
-  }
-
-  .caculator {
-    padding: 10px 6px;
-  }
-
-  form .display input {
-    height: 52px;
-
-    font-size: 23px;
-  }
-
-  form input[type="button"] {
-    height: 46px;
-
-    margin: 0 1px;
-
-    font-size: 13px;
+    height: 48px;
+    border-radius: 6px;
   }
 }
 
